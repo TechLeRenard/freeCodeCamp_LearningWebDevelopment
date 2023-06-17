@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Tourney:wght@200&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamer Style</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+  <div class="body_container">
+  
+    <h1 id="title">Gaming Style Survey</h1>
+    <p id="description">"What kind of <em>gamer</em> are you?"</p>
+
+    <form id="survey-form">
+
+		<fieldset>
+		<legend>Describe yourself</legend>
+      <label id="name-label">Enter your name <input id="name" type="text" placeholder="Name" required /></label>
+	  <label class="inline"><input id="indoor" type="radio" name="sex" value="indoor" > Male</label>
+      <label class="inline"><input id="outdoor" type="radio" name="sex" value="outdoor" > Female</label>
+	  <hr class="hr_sep">
+      <label id="email-label">Enter your email <input id="email" type="email" placeholder="Email" required /></label>
+	  <hr class="hr_sep">
+      <label id="number-label">Enter your age <input id="number" type="number" min="10" max="100" placeholder="Age" required /></label>
+		<hr class="hr_sep">
+		</fieldset>
+		<hr>
+			<fieldset>
+		<legend>Describe your gamer-self</legend>
+		<label class="inline" for="less40">How many gaming hours per week do you play?<br><input id="less40" type="radio" name="gaming_hours"/> less than 40 hours</label>
+        <label class="inline" for="more40"><input id="more40" type="radio" name="gaming_hours"  /> more than 40 hours</label>
+		<hr class="hr_sep">
+		<label class="inline" for="PlayStation">On what platform/ console/s?(Can be more than 1)<br><input id="PlayStation" type="checkbox" name="platform"  /> Play Station</label>
+		<label class="inline" for="XBOX"><input id="XBOX" type="checkbox" name="platform"  /> XBOX</label>
+        <label class="inline" for="NDS"><input id="NDS" type="checkbox" name="platform"  /> Nintendo DS</label>
+		<label class="inline" for="Mobile"><input id="Mobile" type="checkbox" name="platform"  /> Mobile</label>
+		<label class="inline" for="PC"><input id="PC" type="checkbox" name="platform"  /> PC Gaming</label>
+		<hr class="hr_sep">
+		<label class="inline" for="SinglePlayer">On which player mode do you prefer? (If both, then check both)<br><input id="SinglePlayer" type="checkbox" name="PlayerMode"  /> Single Player</label>
+		<label class="inline" for="Multiplayer"><input id="Multiplayer" type="checkbox" name="PlayerMode"  /> Multiplayer</label>
+		<hr class="hr_sep">
+		
+      <label id="fav_game">What is your favorite game you have played? <input id="fav_game" type="text" placeholder="Super Mario Bros." required /></label>
+	  <hr class="hr_sep">
+	  </fieldset>
+	  <hr>
+	  <fieldset>
+	  <legend>Further questions (skippable)</legend>
+	  <label id="want_game">Is there a game you haven't played but want to have it? What is it? <input id="want_game" type="text" placeholder=" "/></label>
+	  
+	  <label class="inline" for="puzzle">What genre is that game? (Can be more than 1) <br> <input id="genre" type="checkbox" name="g"/> Puzzle</label>
+	  <label class="inline" for="genre"><input id="genre" type="checkbox" name="platform"/> Building/ Simulation</label>
+	  <label class="inline" for="genre"><input id="genre" type="checkbox" name="platform"/> Family-friendly</label>
+	  <label class="inline" for="genre"><input id="genre" type="checkbox" name="platform"/> 2D Platform</label>
+	  <label class="inline" for="genre"><input id="genre" type="checkbox" name="platform"/> 3D Platform</label>
+	  <label class="inline" for="genre"><input id="genre" type="checkbox" name="platform"/> Novel</label>
+	  <label class="inline" for="genre"><input id="genre" type="checkbox" name="platform"/> Adventure</label>
+	  <label class="inline" for="genre"><input id="genre" type="checkbox" name="platform"/> MMORPG</label>
+	  <label class="inline" for="genre"><input id="genre" type="checkbox" name="platform"/> FPS</label>
+	  <label class="inline" for="genre"><input id="genre" type="checkbox" name="platform"/> Sci-fi</label>
+	  <label class="inline" for="genre"><input id="genre" type="checkbox" name="platform"/> Fantasy</label>
+	  <label class="inline" for="genre"><input id="genre" type="checkbox" name="platform"/> Drama</label>
+	  <label class="inline" for="genre"><input id="genre" type="checkbox" name="platform"/> Horror</label>
+	</fieldset>
+	<hr class="hr_sep">
+		<label id="select">How did you hear about this survey?	
+      <select id="dropdown">
+		<option value="">Select one</option>
+        <option value="Facebook">Facebook</option>
+        <option value="Youtube">Youtube</option>
+		<option value="Linkedin">Linkedin</option>
+		<option value="Referred by others">Referred by others</option>
+		<option value="Others">Others</option>
+        </select>
+		<hr class="hr_sep">
+		</label>
+		</fieldset>
+	</fieldset>
+	<label for="bio">Provide a bio:<br>
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+
+
+        <input id="submit" type="submit" value="Submit" />
+
+
+
+    </form>
+
+	</div>
+  </body>
+</html>
