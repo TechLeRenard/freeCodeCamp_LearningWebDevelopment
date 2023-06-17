@@ -1,3 +1,3 @@
 First part of responsive web development certification
 A survey for gamers
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/TechLeRenard/freeCodeCamp_LearningWebDevelopment/blob/main/SurveyForm/index.jpg?raw=true)
